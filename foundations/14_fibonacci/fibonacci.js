@@ -1,15 +1,18 @@
 const fibonacci = function (index) {
-  if (!sequence) {
-    let sequence = [1, 1];
+    if(index = 0) {
+        return 0;
+    }
+    if(index = 1 || index = 2) {
+        return 1;
+    }
+  let a = 1;
+  let b = 1;
+  for (let i = 3; i <= index; i++) {
+    let c = a + b;
+    a = b;
+    b = c;
   }
-  if (index <= sequence.length) {
-    return sequence[index];
-  } else {
-    sequence.push(
-      sequence[sequence.length] + sequence[sequence.length - 1],
-    );
-    fibonacci(index);
-  }
+  return b;
 };
 
 // Do not edit below this line
