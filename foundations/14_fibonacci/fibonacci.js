@@ -4,7 +4,7 @@ const fibonacci = function (index) {
     return "OOPS";
   }
 
-  if ((index = 0)) {
+  if (index === 0) {
     return 0;
   }
   if (index === 1 || index === 2) {
