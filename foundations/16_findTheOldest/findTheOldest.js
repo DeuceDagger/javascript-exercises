@@ -1,6 +1,6 @@
 const findTheOldest = function (people) {
   let ages = [];
-  let thisYear = new Date().getFullYear;
+  let thisYear = new Date().getFullYear();
 
   for (const person of people) {
     let birth = person.yearOfBirth;
